@@ -1,0 +1,14 @@
+<h1 class="headline">Login</h1>
+<form [formGroup]="matLoginForm" (ngSubmit)="matLoginForm.valid && login()">
+  <mat-form-field>
+    <input  type="text" matInput placeholder="UserName" formControlName="username">
+    <mat-error>Username can't be blank</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input  type="password" matInput placeholder="Password" formControlName="password">
+    <mat-error>Username can't be blank</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Login</button>
+</form>
